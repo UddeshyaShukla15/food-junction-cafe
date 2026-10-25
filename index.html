@@ -12,89 +12,147 @@
     <meta name="author" content="Uddeshya shukla" />
 
     <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <p><a href="index.html">Food Junction</a></p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="site-header__logo">Food Junction</a>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="index.html" class="site-nav__link" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="menu.html" class="site-nav__link">Menu</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="gallery.html" class="site-nav__link">Gallery</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="about.html" class="site-nav__link">About us</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="contact.html" class="site-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section>
-        <h1>Food Junction Cafe</h1>
-        <p>khao piyo, aish karo!</p>
-        <p>
-          Hey foodies hope you all are good. Visit our cafe and taste our food
-          we will be happy to see you. Thank you
-        </p>
-        <p>
-          <a href="menu.html">View our full menu</a>
-          <a href="contact.html">Reserve a table</a>
-        </p>
+    <main id="main-content">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Food Junction Cafe</h1>
+          <p class="hero__tagline">khao piyo, aish karo!</p>
+          <p class="hero__text">
+            Hey foodies hope you all are good. Visit our cafe and taste our food
+            we will be happy to see you. Thank you
+          </p>
+          <div class="hero__actions">
+            <a href="menu.html" class="btn btn--primary">View our full menu</a>
+            <a href="contact.html" class="btn btn--secondary"
+              >Reserve a table</a
+            >
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>Today's special</h2>
-        <article>
-          <h3>Hot chocolate</h3>
-          <img
-            src="images/hot-chocolate.jpg"
-            alt="A cup of hot chocolate topped with whipped cream"
-            width="250"
-            height="300"
-          />
-          <p>Rich and creamy, perfect for a cool evening.</p>
-        </article>
-        <article>
-          <h3>Sandwich and Burger combo</h3>
-          <img
-            src="images/sandwich-and-burger.jpg"
-            alt="A grilled sandwich and a burger on one plate"
-            width="250"
-            height="300"
-          />
-          <p>Our most ordered combination.</p>
-        </article>
-        <article>
-          <h3>Momos and Maggie</h3>
-          <img
-            src="images/momos-and-maggie.jpg"
-            alt="Steamed momos next to a bowl of masala maggie"
-            width="250"
-            height="300"
-          />
-          <p>Hot, spicy and made fresh to order.</p>
-        </article>
+
+      <section class="section specials">
+        <div class="container">
+          <h2 class="section__title">Today's special</h2>
+          <div class="specials__list">
+            <article class="card">
+              <img
+                class="card__image"
+                src="images/hot-chocolate.jpg"
+                alt="A cup of hot chocolate topped with whipped cream"
+                width="250"
+                height="300"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Hot chocolate</h3>
+                <p class="card__text">
+                  Rich and creamy, perfect for a cool evening.
+                </p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                class="card__image"
+                src="images/sandwich-and-burger.jpg"
+                alt="A grilled sandwich and a burger on one plate"
+                width="250"
+                height="300"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Sandwich and Burger combo</h3>
+                <p class="card__text">Our most ordered combination.</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                class="card__image"
+                src="images/momos-and-maggie.jpg"
+                alt="Steamed momos next to a bowl of masala maggie"
+                width="250"
+                height="300"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Momos and Maggie</h3>
+                <p class="card__text">Hot, spicy and made fresh to order.</p>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>Why choose us</h2>
-        <ul>
-          <li>Best taste in town</li>
-          <li>Grab offers in food</li>
-          <li>A comfortable place to spend time with your family</li>
-        </ul>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Why choose us</h2>
+          <ul class="feature-list">
+            <li class="feature-list__item">Best taste in town</li>
+            <li class="feature-list__item">Grab offers in food</li>
+            <li class="feature-list__item">
+              A comfortable place to spend time with your family
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2>Opening hours</h2>
-        <p>11:00am to 11:00pm</p>
-        <p><a href="about.html">Read more about us</a></p>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Opening hours</h2>
+          <p>11:00am to 11:00pm</p>
+          <p><a href="about.html">Read more about us</a></p>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; Food Junction</p>
-      <p>506/A Sanjeevani nagar, Jabalpur</p>
-      <address>
-        <a href="mailto:uddeshya@gmail.com">uddeshya@gmail.com</a>
-      </address>
+    <footer class="site-footer">
+      <div class="container">
+        <p class="site-footer__text">&copy; Food Junction</p>
+        <p class="site-footer__text">506/A Sanjeevani nagar, Jabalpur</p>
+        <address class="site-footer__address">
+          <a href="mailto:uddeshya@gmail.com" class="site-footer__link"
+            >uddeshya@gmail.com</a
+          >
+        </address>
+      </div>
     </footer>
   </body>
 </html>

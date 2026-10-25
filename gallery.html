@@ -12,107 +12,167 @@
     <meta name="author" content="Uddeshya shukla" />
 
     <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <p><a href="index.html">Food Junction</a></p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="site-header__logo">Food Junction</a>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="index.html" class="site-nav__link">Home</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="menu.html" class="site-nav__link">Menu</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="gallery.html" class="site-nav__link" aria-current="page"
+                >Gallery</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="about.html" class="site-nav__link">About us</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="contact.html" class="site-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h1>Our Gallery</h1>
-      <p>A look at our cafe, our food and the people who make it special.</p>
 
-      <figure>
-        <img
-          src="images/cafe-interior-01.jpg"
-          alt="Warm-lit seating area with wooden tables"
-          width="600"
-          height="400"
-        />
-        <figcaption>The main seating area in the evening</figcaption>
-      </figure>
+    <main id="main-content">
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-title">Our Gallery</h1>
+          <p>
+            A look at our cafe, our food and the people who make it special.
+          </p>
+        </div>
+      </section>
 
-      <figure>
-        <img
-          src="images/cafe-interior-02.jpg"
-          alt=" our cafe interior image"
-          width="400"
-          height="400"
-          loading="lazy"
-        />
-        <figcaption>Our cafes interior</figcaption>
-      </figure>
+      <div class="section">
+        <div class="container">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                class="gallery__image"
+                src="images/cafe-interior-01.jpg"
+                alt="Warm-lit seating area with wooden tables"
+                width="600"
+                height="400"
+              />
+              <figcaption class="gallery__caption">
+                The main seating area in the evening
+              </figcaption>
+            </figure>
 
-      <figure>
-        <img
-          src="images/cafe-exterior.jpg"
-          alt=" our cafe exterior image"
-          width="400"
-          height="400"
-          loading="lazy"
-        />
-        <figcaption>Our cafe from the street</figcaption>
-      </figure>
+            <figure class="gallery__item">
+              <img
+                class="gallery__image"
+                src="images/cafe-interior-02.jpg"
+                alt=" our cafe interior image"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">
+                Our cafes interior
+              </figcaption>
+            </figure>
 
-      <figure>
-        <img
-          src="images/hot-chocolate.jpg"
-          alt="A cup of hot chocolate topped with whipped cream"
-          width="400"
-          height="600"
-          loading="lazy"
-        />
-        <figcaption>Our signature Hot Chocolate</figcaption>
-      </figure>
+            <figure class="gallery__item">
+              <img
+                class="gallery__image"
+                src="images/cafe-exterior.jpg"
+                alt=" our cafe exterior image"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">
+                Our cafe from the street
+              </figcaption>
+            </figure>
 
-      <figure>
-        <img
-          src="images/sandwich-and-burger.jpg"
-          alt="Grilled cheesy burgers and sandwiches"
-          width="500"
-          height="500"
-          loading="lazy"
-        />
-        <figcaption>Most ordered snacks of our cafe</figcaption>
-      </figure>
+            <figure class="gallery__item">
+              <img
+                class="gallery__image"
+                src="images/hot-chocolate.jpg"
+                alt="A cup of hot chocolate topped with whipped cream"
+                width="400"
+                height="600"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">
+                Our signature Hot Chocolate
+              </figcaption>
+            </figure>
 
-      <figure>
-        <img
-          src="images/momos-and-maggie.jpg"
-          alt="Hot momos and masala maggie"
-          width="600"
-          height="400"
-          loading="lazy"
-        />
-        <figcaption>Evening snacks</figcaption>
-      </figure>
+            <figure class="gallery__item">
+              <img
+                class="gallery__image"
+                src="images/sandwich-and-burger.jpg"
+                alt="Grilled cheesy burgers and sandwiches"
+                width="500"
+                height="500"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">
+                Most ordered snacks of our cafe
+              </figcaption>
+            </figure>
 
-      <figure>
-        <img
-          src="images/customer.jpg"
-          alt=" our happy customer"
-          width="400"
-          height="550"
-          loading="lazy"
-        />
-        <figcaption>Customer enjoying the food</figcaption>
-      </figure>
+            <figure class="gallery__item">
+              <img
+                class="gallery__image"
+                src="images/momos-and-maggie.jpg"
+                alt="Hot momos and masala maggie"
+                width="600"
+                height="400"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">Evening snacks</figcaption>
+            </figure>
+
+            <figure class="gallery__item">
+              <img
+                class="gallery__image"
+                src="images/customer.jpg"
+                alt=" our happy customer"
+                width="400"
+                height="550"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">
+                Customer enjoying the food
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-      <p>&copy; Food Junction</p>
-      <p>506/A Sanjeevani nagar, Jabalpur</p>
-      <address>
-        <a href="mailto:uddeshya@gmail.com">uddeshya@gmail.com</a>
-      </address>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="site-footer__text">&copy; Food Junction</p>
+        <p class="site-footer__text">506/A Sanjeevani nagar, Jabalpur</p>
+        <address class="site-footer__address">
+          <a href="mailto:uddeshya@gmail.com" class="site-footer__link"
+            >uddeshya@gmail.com</a
+          >
+        </address>
+      </div>
     </footer>
   </body>
 </html>

@@ -12,158 +12,242 @@
     <meta name="author" content="Uddeshya shukla" />
 
     <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <p><a href="index.html">Food Junction</a></p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="site-header__logo">Food Junction</a>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="index.html" class="site-nav__link">Home</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="menu.html" class="site-nav__link">Menu</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="gallery.html" class="site-nav__link">Gallery</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="about.html" class="site-nav__link">About us</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="contact.html" class="site-nav__link" aria-current="page"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h1>Contact us</h1>
-      <p>Fill the below form for Reservation</p>
-      <form method="get">
-        <p>
-          <label><input type="text" name="name" required />Name:</label>
-        </p>
 
-        <p>
-          <label><input type="email" name="email" required />Email:</label>
-        </p>
+    <main id="main-content">
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-title">Contact us</h1>
+          <p>Fill the below form for Reservation</p>
+        </div>
+      </section>
 
-        <p>
-          <label
-            ><input
-              type="tel"
-              name="phone"
-              pattern="[0-9]{10}"
-              title="Enter a 10 digit number"
-              required
-            />Phone:</label
-          >
-        </p>
-
-        <p>
-          <label
-            ><input type="date" name="date" required />Reservation date:</label
-          >
-        </p>
-
-        <p>
-          <label
-            ><input type="time" name="time" required />Reservation time:</label
-          >
-        </p>
-
-        <p>
-          <label
-            ><input type="number" name="guests" min="1" max="20" required />No.
-            of guests:</label
-          >
-        </p>
-
-        <fieldset>
-          <legend>Seating preferences</legend>
-          <p>
-            <label
-              ><input
-                type="radio"
-                name="seating"
-                value="indoor"
+      <div class="section">
+        <div class="container">
+          <form class="form" method="get">
+            <div class="form__field">
+              <label for="name" class="form__label">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form__control"
+                autocomplete="name"
                 required
-              />Indoor</label
-            >
-            <label
-              ><input
-                type="radio"
-                name="seating"
-                value="outdoor"
-              />outdoor</label
-            >
-            <label
-              ><input type="radio" name="seating" value="window" />Window
-              seat</label
+              />
+            </div>
+
+            <div class="form__field">
+              <label for="email" class="form__label">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__control"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label for="phone" class="form__label">Phone:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form__control"
+                autocomplete="tel"
+                pattern="[0-9]{10}"
+                title="Enter a 10 digit number"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label for="date" class="form__label">Reservation date:</label>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                class="form__control"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label for="time" class="form__label">Reservation time:</label>
+              <input
+                type="time"
+                id="time"
+                name="time"
+                class="form__control"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label for="guests" class="form__label">No. of guests:</label>
+              <input
+                type="number"
+                id="guests"
+                name="guests"
+                class="form__control"
+                min="1"
+                max="20"
+                required
+              />
+            </div>
+
+            <fieldset class="form__group">
+              <legend class="form__legend">Seating preferences</legend>
+              <div class="form__options">
+                <label class="form__option">
+                  <input type="radio" name="seating" value="indoor" required />
+                  Indoor
+                </label>
+                <label class="form__option">
+                  <input type="radio" name="seating" value="outdoor" />
+                  outdoor
+                </label>
+                <label class="form__option">
+                  <input type="radio" name="seating" value="window" />
+                  Window seat
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form__field">
+              <label for="occasion" class="form__label">Ocassion:</label>
+              <select
+                id="occasion"
+                name="occasion"
+                class="form__control"
+                required
+              >
+                <option value="">Select an occasion</option>
+                <optgroup label="Personal">
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                </optgroup>
+                <optgroup label="Other">
+                  <option value="business">Business Meeting</option>
+                  <option value="family">Family Gathering</option>
+                  <option value="other">Other</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form__field">
+              <label for="requests" class="form__label"
+                >Special Requests:</label
+              >
+              <textarea
+                id="requests"
+                name="requests"
+                class="form__control"
+                rows="4"
+                placeholder="Any special requests?"
+              ></textarea>
+            </div>
+
+            <div class="form__field">
+              <label class="form__option">
+                <input type="checkbox" id="policy" name="policy" required />
+                I accept the terms and conditions
+              </label>
+            </div>
+
+            <div class="form__actions">
+              <button type="submit" class="btn btn--primary">
+                Submit Reservation
+              </button>
+              <button type="reset" class="btn btn--secondary">
+                Reset form
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Find us</h2>
+          <address class="contact-info">
+            Food Junction, 506/A Sanjeevani Nagar, Jabalpur<br />
+            Phone: <a href="tel:+918770564820">+91 87705 64820</a><br />
+            Email: <a href="mailto:uddeshya@gmail.com">uddeshya@gmail.com</a>
+          </address>
+
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29344.706651710483!2d79.9014912!3d23.166976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1792686968923!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            title="Map showing the location of Food Junction Cafe"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+
+          <p>
+            <a
+              href="https://maps.google.com"
+              class="btn btn--secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Get directions on Google Maps</a
             >
           </p>
-        </fieldset>
-
-        <p>
-          <label for="occasion">Ocassion:</label>
-          <select id="occasion" name="occasion" required>
-            <option value="">Select an occasion</option>
-            <optgroup label="Personal">
-              <option value="birthday">Birthday</option>
-              <option value="anniversary">Anniversary</option>
-            </optgroup>
-            <optgroup label="Other">
-              <option value="business">Business Meeting</option>
-              <option value="family">Family Gathering</option>
-              <option value="other">Other</option>
-            </optgroup>
-          </select>
-        </p>
-        <p>
-          <label for="requests">Special Requests:</label>
-          <textarea
-            id="requests"
-            name="requests"
-            rows="4"
-            cols="40"
-            placeholder="Any special requests?"
-          ></textarea>
-        </p>
-
-        <p>
-          <input type="checkbox" id="policy" name="policy" required />
-          <label for="policy">I accept the terms and conditions</label>
-        </p>
-        <p>
-          <button type="submit">Submit Reservation</button>
-          <button type="reset">Reset form</button>
-        </p>
-      </form>
-
-      <section>
-        <h2>Find us</h2>
-        <address>
-          Food Junction, 506/A Sanjeevani Nagar, Jabalpur<br />
-          Phone: <a href="tel:+918770564820">+91 87705 64820</a><br />
-          Email: <a href="mailto:uddeshya@gmail.com">uddeshya@gmail.com</a>
-        </address>
-
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29344.706651710483!2d79.9014912!3d23.166976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1792686968923!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          title="Map showing the location of Food Junction Cafe"
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-        ></iframe>
-
-        <p>
-          <a
-            href="https://maps.google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get directions on Google Maps</a
-          >
-        </p>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>&copy; Food Junction</p>
-      <p>506/A Sanjeevani nagar, Jabalpur</p>
-      <address>
-        <a href="mailto:uddeshya@gmail.com">uddeshya@gmail.com</a>
-      </address>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="site-footer__text">&copy; Food Junction</p>
+        <p class="site-footer__text">506/A Sanjeevani nagar, Jabalpur</p>
+        <address class="site-footer__address">
+          <a href="mailto:uddeshya@gmail.com" class="site-footer__link"
+            >uddeshya@gmail.com</a
+          >
+        </address>
+      </div>
     </footer>
   </body>
 </html>

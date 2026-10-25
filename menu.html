@@ -12,239 +12,306 @@
     <meta name="author" content="Uddeshya shukla" />
 
     <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <p><a href="index.html">Food Junction</a></p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="site-header__logo">Food Junction</a>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="index.html" class="site-nav__link">Home</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="menu.html" class="site-nav__link" aria-current="page"
+                >Menu</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="gallery.html" class="site-nav__link">Gallery</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="about.html" class="site-nav__link">About us</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="contact.html" class="site-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main id="top">
-      <h1>Our Menu</h1>
-      <nav aria-label="Menu categories">
-        <ul>
-          <li><a href="#beverages">Hot and Cold beverages</a></li>
-          <li><a href="#burgers">Burgers and Sandwiches</a></li>
-          <li><a href="#momos">Momos and maggie</a></li>
-        </ul>
-      </nav>
-      <p>
-        <small>
-          <abbr title="Contains dairy">D</abbr> = contains dairy |
-          <abbr title="Contains gluten">G</abbr> = contains gluten
-        </small>
-      </p>
-
-      <section id="beverages">
-        <h2>Hot and Cold beverages</h2>
-        <figure>
-          <img
-            src="images/hot-and-cold-beverages.jpg"
-            alt="A hot coffee and an iced shake side by side"
-            width="300"
-            height="300"
-          />
-          <figcaption>Our hot and cold drinks</figcaption>
-        </figure>
-        <table>
-          <caption>
-            Beverages price in rupees
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Items</th>
-              <th scope="col">Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">
-                Hot Chocolate<abbr title="Contains dairy">D</abbr>
-              </th>
-              <td>99/-</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                Cold Coffee<abbr title="Contains dairy">D</abbr>
-              </th>
-              <td>79/-</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                Oreo Shake<abbr title="Contains dairy">D</abbr>
-              </th>
-              <td>129/-</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                Hot Coffee<abbr title="Contains dairy">D</abbr>
-              </th>
-              <td>49/-</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                Cappuccino<abbr title="Contains dairy">D</abbr>
-              </th>
-              <td>69/-</td>
-            </tr>
-            <tr>
-              <th scope="row">Lattee<abbr title="Contains dairy">D</abbr></th>
-              <td>89/-</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="2">GST is included in all prices.</td>
-            </tr>
-          </tfoot>
-        </table>
+    <main id="main-content">
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-title">Our Menu</h1>
+          <nav class="category-nav" aria-label="Menu categories">
+            <ul class="category-nav__list">
+              <li class="category-nav__item">
+                <a href="#beverages" class="category-nav__link"
+                  >Hot and Cold beverages</a
+                >
+              </li>
+              <li class="category-nav__item">
+                <a href="#burgers" class="category-nav__link"
+                  >Burgers and Sandwiches</a
+                >
+              </li>
+              <li class="category-nav__item">
+                <a href="#momos" class="category-nav__link">Momos and maggie</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="menu-legend">
+            <small>
+              <abbr title="Contains dairy">D</abbr> = contains dairy |
+              <abbr title="Contains gluten">G</abbr> = contains gluten
+            </small>
+          </p>
+        </div>
       </section>
 
-      <section id="burgers">
-        <h2>Burger and Sandwiches</h2>
-        <figure>
-          <img
-            src="images/sandwich-and-burger.jpg"
-            alt="Grilled cheesy burgers and sandwiches"
-            width="300"
-            height="300"
-          />
-          <figcaption>Our Burgers ans Sandwiches</figcaption>
-        </figure>
-        <table>
-          <caption>
-            Burgers and Sandwiches in Rupees
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Items</th>
-              <th scope="col">Prices</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">
-                Veg Burger<abbr title="Contains gluten">G</abbr>
-              </th>
-              <td>59/-</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                Veg Cheese Burger<abbr title="Contains gluten">G</abbr>
-              </th>
-              <td>79/-</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                Paneer Burger<abbr title="Contains gluten">G</abbr>
-              </th>
-              <td>89/-</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                Veg Sandwich<abbr title="Contains gluten">G</abbr>
-              </th>
-              <td>49/-</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                Veg Cheese Sandwich<abbr title="Contains gluten">G</abbr>
-              </th>
-              <td>69/-</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                Veg Cheese Paneer Sandwich<abbr title="Contains gluten">G</abbr>
-              </th>
-              <td>89/-</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="2">GST is included in all prices</td>
-            </tr>
-          </tfoot>
-        </table>
+      <section id="beverages" class="section menu-section">
+        <div class="container">
+          <h2 class="section__title">Hot and Cold beverages</h2>
+          <figure class="menu-section__figure">
+            <img
+              class="menu-section__image"
+              src="images/hot-and-cold-beverages.jpg"
+              alt="A hot coffee and an iced shake side by side"
+              width="300"
+              height="300"
+            />
+            <figcaption class="menu-section__caption">
+              Our hot and cold drinks
+            </figcaption>
+          </figure>
+          <table class="data-table">
+            <caption>
+              Beverages price in rupees
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Items</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  Hot Chocolate<abbr title="Contains dairy">D</abbr>
+                </th>
+                <td>99/-</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Cold Coffee<abbr title="Contains dairy">D</abbr>
+                </th>
+                <td>79/-</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Oreo Shake<abbr title="Contains dairy">D</abbr>
+                </th>
+                <td>129/-</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Hot Coffee<abbr title="Contains dairy">D</abbr>
+                </th>
+                <td>49/-</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Cappuccino<abbr title="Contains dairy">D</abbr>
+                </th>
+                <td>69/-</td>
+              </tr>
+              <tr>
+                <th scope="row">Lattee<abbr title="Contains dairy">D</abbr></th>
+                <td>89/-</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">GST is included in all prices.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </section>
-      <section id="momos">
-        <h2>Momos and Maggie</h2>
-        <figure>
-          <img
-            src="images/momos-and-maggie.jpg"
-            alt="Hot momos and masala maggie"
-            width="300"
-            height="300"
-          />
-          <figcaption>Our Momos and Maggie</figcaption>
-        </figure>
-        <table>
-          <caption>
-            Price of Momos and Maggie are in rupee
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Items</th>
-              <th scope="col">Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">masala maggie</th>
-              <td>39/-</td>
-            </tr>
-            <tr>
-              <th scope="row">veg cheese maggie</th>
-              <td>79/-</td>
-            </tr>
-            <tr>
-              <th scope="row">veg masala maggie</th>
-              <td>59/-</td>
-            </tr>
-            <tr>
-              <th scope="row">veg momos</th>
-              <td>29/-</td>
-            </tr>
-            <tr>
-              <th scope="row">paneer momos</th>
-              <td>39/-</td>
-            </tr>
-            <tr>
-              <th scope="row">manchooriyan momos</th>
-              <td>39/-</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="2">GST is included in all prices.</td>
-            </tr>
-          </tfoot>
-        </table>
-      </section>
-      <details>
-        <summary>Allergen information</summary>
-        <p>
-          Our food may contain milk, gluten, soy and nuts. Please tell our staff
-          about any allergies before ordering.
-        </p>
-      </details>
 
-      <p><a href="#top">Back to top</a></p>
+      <section id="burgers" class="section menu-section">
+        <div class="container">
+          <h2 class="section__title">Burger and Sandwiches</h2>
+          <figure class="menu-section__figure">
+            <img
+              class="menu-section__image"
+              src="images/sandwich-and-burger.jpg"
+              alt="Grilled cheesy burgers and sandwiches"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+            <figcaption class="menu-section__caption">
+              Our Burgers ans Sandwiches
+            </figcaption>
+          </figure>
+          <table class="data-table">
+            <caption>
+              Burgers and Sandwiches in Rupees
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Items</th>
+                <th scope="col">Prices</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  Veg Burger<abbr title="Contains gluten">G</abbr>
+                </th>
+                <td>59/-</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Veg Cheese Burger<abbr title="Contains gluten">G</abbr>
+                </th>
+                <td>79/-</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Paneer Burger<abbr title="Contains gluten">G</abbr>
+                </th>
+                <td>89/-</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Veg Sandwich<abbr title="Contains gluten">G</abbr>
+                </th>
+                <td>49/-</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Veg Cheese Sandwich<abbr title="Contains gluten">G</abbr>
+                </th>
+                <td>69/-</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Veg Cheese Paneer Sandwich<abbr title="Contains gluten"
+                    >G</abbr
+                  >
+                </th>
+                <td>89/-</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">GST is included in all prices</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <section id="momos" class="section menu-section">
+        <div class="container">
+          <h2 class="section__title">Momos and Maggie</h2>
+          <figure class="menu-section__figure">
+            <img
+              class="menu-section__image"
+              src="images/momos-and-maggie.jpg"
+              alt="Hot momos and masala maggie"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+            <figcaption class="menu-section__caption">
+              Our Momos and Maggie
+            </figcaption>
+          </figure>
+          <table class="data-table">
+            <caption>
+              Price of Momos and Maggie are in rupee
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Items</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">masala maggie</th>
+                <td>39/-</td>
+              </tr>
+              <tr>
+                <th scope="row">veg cheese maggie</th>
+                <td>79/-</td>
+              </tr>
+              <tr>
+                <th scope="row">veg masala maggie</th>
+                <td>59/-</td>
+              </tr>
+              <tr>
+                <th scope="row">veg momos</th>
+                <td>29/-</td>
+              </tr>
+              <tr>
+                <th scope="row">paneer momos</th>
+                <td>39/-</td>
+              </tr>
+              <tr>
+                <th scope="row">manchooriyan momos</th>
+                <td>39/-</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">GST is included in all prices.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <div class="section">
+        <div class="container">
+          <details class="allergen-info">
+            <summary>Allergen information</summary>
+            <p>
+              Our food may contain milk, gluten, soy and nuts. Please tell our
+              staff about any allergies before ordering.
+            </p>
+          </details>
+
+          <p><a href="#main-content" class="back-to-top">Back to top</a></p>
+        </div>
+      </div>
     </main>
-    <footer>
-      <p>&copy; Food Junction</p>
-      <p>506/A Sanjeevani nagar, Jabalpur</p>
-      <address>
-        <a href="mailto:uddeshya@gmail.com">uddeshya@gmail.com</a>
-      </address>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="site-footer__text">&copy; Food Junction</p>
+        <p class="site-footer__text">506/A Sanjeevani nagar, Jabalpur</p>
+        <address class="site-footer__address">
+          <a href="mailto:uddeshya@gmail.com" class="site-footer__link"
+            >uddeshya@gmail.com</a
+          >
+        </address>
+      </div>
     </footer>
   </body>
 </html>

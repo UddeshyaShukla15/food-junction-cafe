@@ -12,107 +12,161 @@
     <meta name="author" content="Uddeshya shukla" />
 
     <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <p><a href="index.html">Food Junction</a></p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="site-header__logo">Food Junction</a>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="index.html" class="site-nav__link">Home</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="menu.html" class="site-nav__link">Menu</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="gallery.html" class="site-nav__link">Gallery</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="about.html" class="site-nav__link" aria-current="page"
+                >About us</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="contact.html" class="site-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h1>About Food Junction cafe</h1>
 
-      <section>
-        <h2>Our Story</h2>
-        <p>
-          It's been 5 years since we opened our doors in Jabalpur. With God's
-          grace, our customers love our food and keep coming back.
-        </p>
-        <p>
-          What started as a small corner cafe has grown into a place where
-          friends and families meet every day.
-        </p>
+    <main id="main-content">
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-title">About Food Junction cafe</h1>
+        </div>
       </section>
 
-      <section>
-        <h2>Meet our owner</h2>
-        <figure>
-          <img
-            src="images/owner.jpg"
-            alt="Uddeshya Shukla, owner of Food Junction, standing at the cafe counter"
-            width="200"
-            height="300"
-          />
-          <figcaption>Uddeshy Shukla, founder and owner</figcaption>
-        </figure>
-        <figure>
-          <blockquote>
-            <p>
-              Good food brings people together, and a cafe should feel like
-              home.
-            </p>
-          </blockquote>
-          <figcaption>Uddeshya shukla, Owner</figcaption>
-        </figure>
-      </section>
-      <section>
-        <h2>Our Journey</h2>
-        <ol>
-          <li>
-            <time datetime="2021">2021</time>: We opened our first small cafe.
-          </li>
-          <li>
-            <time datetime="2023">2023</time>: We added burgers and momos to the
-            menu.
-          </li>
-          <li>
-            <time datetime="2026">2026</time>: We started online table
-            reservations.
-          </li>
-        </ol>
-      </section>
-      <section>
-        <h2>Opening Hours</h2>
-        <table>
-          <caption>Opening Hours</caption>
-          <thead>
-            <tr>
-              <th scope="col">Day</th>
-              <th scope="col">Timings</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Monday-Sunday</td>
-              <td>11:00 am - 11:00 pm</td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Our Story</h2>
+          <p>
+            It's been 5 years since we opened our doors in Jabalpur. With God's
+            grace, our customers love our food and keep coming back.
+          </p>
+          <p>
+            What started as a small corner cafe has grown into a place where
+            friends and families meet every day.
+          </p>
+        </div>
       </section>
 
-      <section>
-        <h2>Find us</h2>
-        <address>
-          Food junction<br />
-          506/A Sanjeevani nagar, Jabalpur<br />
-          <a href="tel:+918770564820">Call us</a>
-        </address>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Meet our owner</h2>
+          <div class="owner">
+            <figure class="owner__photo">
+              <img
+                class="owner__image"
+                src="images/owner.jpg"
+                alt="Uddeshya Shukla, owner of Food Junction, standing at the cafe counter"
+                width="200"
+                height="300"
+              />
+              <figcaption class="owner__caption">
+                Uddeshy Shukla, founder and owner
+              </figcaption>
+            </figure>
+            <figure class="owner__quote">
+              <blockquote class="owner__blockquote">
+                <p>
+                  Good food brings people together, and a cafe should feel like
+                  home.
+                </p>
+              </blockquote>
+              <figcaption class="owner__caption">
+                Uddeshya shukla, Owner
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Our Journey</h2>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <time datetime="2021">2021</time>: We opened our first small cafe.
+            </li>
+            <li class="timeline__item">
+              <time datetime="2023">2023</time>: We added burgers and momos to
+              the menu.
+            </li>
+            <li class="timeline__item">
+              <time datetime="2026">2026</time>: We started online table
+              reservations.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Opening Hours</h2>
+          <table class="data-table">
+            <caption>
+              Opening Hours
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Timings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday-Sunday</td>
+                <td>11:00 am - 11:00 pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Find us</h2>
+          <address class="contact-info">
+            Food junction<br />
+            506/A Sanjeevani nagar, Jabalpur<br />
+            <a href="tel:+918770564820">Call us</a>
+          </address>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>&copy; Food Junction</p>
-      <p>506/A Sanjeevani nagar, Jabalpur</p>
-      <address>
-        <a href="mailto:uddeshya@gmail.com">uddeshya@gmail.com</a>
-      </address>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="site-footer__text">&copy; Food Junction</p>
+        <p class="site-footer__text">506/A Sanjeevani nagar, Jabalpur</p>
+        <address class="site-footer__address">
+          <a href="mailto:uddeshya@gmail.com" class="site-footer__link"
+            >uddeshya@gmail.com</a
+          >
+        </address>
+      </div>
     </footer>
   </body>
 </html>
