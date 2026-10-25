@@ -28,20 +28,21 @@
    01. VARIABLES
    ===================================================================== */
 :root {
-  /* colors */
-  --color-primary: #b5482b;
-  --color-primary-dark: #8a3320;
-  --color-primary-tint: #fbe9df;
-  --color-bg: #fffaf3;
-  --color-surface: #ffffff;
-  --color-text: #2b2b2b;
-  --color-text-muted: #5c5c5c;
-  --color-border: #e6d9cc;
-  --color-border-strong: #7a6a60;
+  /* colors: strawberry rose, soft blush pink, warm plum-brown text */
+  --color-primary: #b23a62;        /* raspberry rose: buttons, links, table headers */
+  --color-primary-dark: #8a2447;   /* deep berry: hover, logo, strong text */
+  --color-primary-tint: #fde7ee;   /* blush pink: page headers, specials section */
+  --color-accent: #f29bb3;         /* candy pink: decoration only (never for text) */
+  --color-bg: #fdf0f3;             /* soft pink-cream page background */
+  --color-surface: #fffafb;        /* cards, form, tables (slightly off-white = gentler) */
+  --color-text: #3d2430;           /* deep plum-brown */
+  --color-text-muted: #6e5560;
+  --color-border: #f0d3dc;
+  --color-border-strong: #8f6f7c;
   --color-error: #b3261e;
-  --color-footer-bg: #2b2b2b;
-  --color-footer-text: #f3e9de;
-  --color-footer-link: #ffb999;
+  --color-footer-bg: #3d1f2b;      /* dark plum */
+  --color-footer-text: #fde7ee;
+  --color-footer-link: #f7a8c0;
 
   /* typography */
   --font-heading: "Playfair Display", Georgia, serif;
@@ -190,9 +191,10 @@ a:where(:hover) {
   content: "";
   display: block;
   width: 3rem;
-  height: 3px;
+  height: 4px;
   margin-top: var(--space-sm);
-  background: var(--color-primary);
+  background: var(--color-accent);
+  border-radius: 2px;
 }
 
 .page-header {
@@ -399,6 +401,7 @@ a:where(:hover) {
 
 .card {
   overflow: hidden; /* clips the image to the rounded corners */
+  border-top: 4px solid var(--color-accent);
   background: var(--color-surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow-card);
@@ -445,7 +448,7 @@ a:where(:hover) {
 .feature-list__item {
   padding: var(--space-md);
   background: var(--color-surface);
-  border-left: 4px solid var(--color-primary);
+  border-left: 4px solid var(--color-accent);
   border-radius: var(--radius);
   box-shadow: var(--shadow-card);
 }
@@ -847,6 +850,7 @@ textarea.form__control {
    ===================================================================== */
 .site-footer {
   padding-block: var(--space-lg);
+  border-top: 4px solid var(--color-accent);
   text-align: center;
   color: var(--color-footer-text);
   background: var(--color-footer-bg);
